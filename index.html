@@ -1,0 +1,234 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;800&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'montserrat': ['montserrat, sans-serif'],
+                    },
+                    colors: {
+
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-montserrat bg-gray-100 h-[1000px]">
+    <!-- Header -->
+    <header class="header bg-white font-montserrat">
+        <div class="flex justify-between items-center p-5 mx-16 ">
+            <div class="flex items-center gap-5 py-3">
+                <h1 class="text-3xl font-bold  text-blue-900">
+                    JobforAll
+                </h1>
+                <ul class="flex px-2 text-[17px]">
+                    <li class="py-2 mx-3 border-b-[2px] border-gray-700">
+                        <a href="#" class=" active:border-b-[2px] border-gray-700 font-semibold">Cari Lowongan</a>
+                    </li>
+                    <li class="py-2 mx-3 border-b-none hover:border-b border-gray-400">
+                        <a href="#">MyJobS</a>
+                    </li>
+                    <li class="py-2 mx-3 border-b-none hover:border-b border-gray-400">
+                        <a href="#">Profil perusahaan</a>
+                    </li>
+                    <li class="py-2 mx-3 border-b-none hover:border-b border-gray-400">
+                        <a href="#">Tips karier</a>
+                    </li>
+                </ul>
+            </div>
+            <div class=" items-center">
+                <ul class="flex">
+                    <li class="px-4 py-2 font-semibold">
+                        <a href="#">Bahasa</a>
+                    </li>
+                    <li class="px-4 py-2 font-semibold border-[1px] border-blue-500 rounded-[5px] hover:bg-blue-50">
+                        <a href="#" class="text-[#0061B9]">Masuk</a>
+                    </li>
+                    <li class="px-4 py-2 font-semibold  text-[#0061B9]">
+                        <a href="#">Untuk Perusahaan</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <nav class="navbar flex-col md:flex gap-4 pl-[65px] py-4 bg-blue-900 text-slate-50 font-montserrat">
+            <div class="flex mx-10">
+                <!-- Loker -->
+                <form class="mx-1">
+                    <label for="default-search"
+                        class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+                    <div class="relative">
+                        <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                            <svg class="w-4 h-4 text-blue-500 dark:text-blue-400" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                            </svg>
+                        </div>
+                        <input type="search" id="default-search"
+                            class="block h-[45px] w-[365px] p-4 pl-10 outline-blue-400 text-sm text-gray-900 border border-blue-300 rounded-[4px] bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-blue-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="Jabatan, kata kunci, perusahaan" required>
+                    </div>
+                </form>
+                <!-- Akhir Loker -->
+                <!-- Location -->
+                <form class="mx-1">
+                    <label for="default-search"
+                        class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+                    <div class="relative">
+                        <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                            <svg class="w-4 h-4 text-blue-500 dark:text-blue-400" aria-hidden="true" fill="none"
+                                viewBox=" 0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke="currentColor" stroke-width="2"
+                                    d="M16.114-0.011c-6.559 0-12.114 5.587-12.114 12.204 0 6.93 6.439 14.017 10.77 18.998 0.017 0.020 0.717 0.797 1.579 0.797h0.076c0.863 0 1.558-0.777 1.575-0.797 4.064-4.672 10-12.377 10-18.998 0-6.618-4.333-12.204-11.886-12.204zM16.515 29.849c-0.035 0.035-0.086 0.074-0.131 0.107-0.046-0.032-0.096-0.072-0.133-0.107l-0.523-0.602c-4.106-4.71-9.729-11.161-9.729-17.055 0-5.532 4.632-10.205 10.114-10.205 6.829 0 9.886 5.125 9.886 10.205 0 4.474-3.192 10.416-9.485 17.657zM16.035 6.044c-3.313 0-6 2.686-6 6s2.687 6 6 6 6-2.687 6-6-2.686-6-6-6zM16.035 16.044c-2.206 0-4.046-1.838-4.046-4.044s1.794-4 4-4c2.207 0 4 1.794 4 4 0.001 2.206-1.747 4.044-3.954 4.044z">
+                                </path>
+                            </svg>
+                        </div>
+                        <input type="search" id="default-search"
+                            class="block h-[45px] w-[365px] p-4 pl-10 outline-blue-400  text-sm text-gray-900 border border-blue-300 rounded-[4px] bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-blue-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="Daerah, kota atau kabupaten" required>
+                    </div>
+                </form>
+                <!-- Akhir Location -->
+                <!-- List Job -->
+                <form class="mx-1">
+                    <label for="default-search"
+                        class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+                    <div class="relative">
+                        <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                            <svg class="w-4 h-5 text-blue-500 dark:text-blue-400" viewBox="0 0 28 28" aria-hidden="true"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke="currentColor" stroke-width="2"
+                                    d="M8 7.29805C8 6.85622 8.35817 6.49805 8.8 6.49805H25.2C25.6418 6.49805 26 6.85622 26 7.29805V7.69805C26 8.13987 25.6418 8.49805 25.2 8.49805H8.8C8.35817 8.49805 8 8.13987 8 7.69805V7.29805Z"
+                                    fill="#000000" />
+                                <path stroke="currentColor" stroke-width="2"
+                                    d="M8 21.298C8 20.8562 8.35817 20.498 8.8 20.498H25.2C25.6418 20.498 26 20.8562 26 21.298V21.698C26 22.1399 25.6418 22.498 25.2 22.498H8.8C8.35817 22.498 8 22.1399 8 21.698V21.298Z"
+                                    fill="#000000" />
+                                <path stroke="currentColor" stroke-width="2"
+                                    d="M8 14.298C8 13.8562 8.35817 13.498 8.8 13.498H25.2C25.6418 13.498 26 13.8562 26 14.298V14.698C26 15.1399 25.6418 15.498 25.2 15.498H8.8C8.35817 15.498 8 15.1399 8 14.698V14.298Z"
+                                    fill="#000000" />
+                                <path stroke="currentColor" stroke-width="2"
+                                    d="M5 7.5C5 8.32843 4.32843 9 3.5 9C2.67157 9 2 8.32843 2 7.5C2 6.67157 2.67157 6 3.5 6C4.32843 6 5 6.67157 5 7.5Z"
+                                    fill="#000000" />
+                                <path stroke="currentColor" stroke-width="2"
+                                    d="M5 21.498C5 22.3265 4.32843 22.998 3.5 22.998C2.67157 22.998 2 22.3265 2 21.498C2 20.6696 2.67157 19.998 3.5 19.998C4.32843 19.998 5 20.6696 5 21.498Z"
+                                    fill="#000000" />
+                                <path stroke="currentColor" stroke-width="2"
+                                    d="M5 14.498C5 15.3265 4.32843 15.998 3.5 15.998C2.67157 15.998 2 15.3265 2 14.498C2 13.6696 2.67157 12.998 3.5 12.998C4.32843 12.998 5 13.6696 5 14.498Z"
+                                    fill="#000000" />
+                            </svg>
+                        </div>
+                        <input type="search" id="default-search"
+                            class="block h-[45px] w-[365px] p-4 pl-10 outline-blue-400  text-sm text-gray-900 border border-blue-300 rounded-[4px] bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="Semua Spesialis Pekerjaan" required>
+                    </div>
+                </form>
+                <!-- Akhir List Job -->
+                <form class="ml-1">
+                    <button
+                        class="h-[45px] text-[14px] border-2 font-bold rounded relative z-[2] flex items-center px-8 py-2.5  leading-tight text-white shadow-md transition duration-150 ease-in-out hover:bg-white-300 focus:bg-primary-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-primary-800 active:shadow-lg"
+                        type="button">Cari
+                    </button>
+                </form>
+            </div>
+            <div class="flex px-5 mx-5">
+                <div class="">
+                    <ul class="flex text-[12px] font-semibold ">
+                        <li><a href="#" class="border p-2 rounded-[3px] mx-1">Gaji</a></li>
+                        <li><a href="#" class="border p-2 rounded-[3px] mx-1">Jenis Pekerjaan</a></li>
+                        <li><a href="#" class="border p-2 rounded-[3px] mx-1">Tanggal Ditanyakan</a></li>
+                    </ul>
+                </div>
+                <div class="mx-2 border w-0 h-[20px] "></div>
+                <div class="text-[12px]">
+                    <a href="#" class="hover:border-b-white">Urut Berdasarkan Relevansi</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- main -->
+    <section class="w-[85%] m-auto">
+        <div class="ml-9 py-3">
+            <p><span class="font-semibold">1-30</span> dari 44.717 lowongan</p>
+        </div>
+        <div class="flex">
+            <div class="flex flex-col relative">
+                <div class=" flex-initial mb-1.5 cursor-pointer bg-white w-[435px] rounded-[5px] text-[14px] hover:drop-shadow-md"
+                    id="dropdownButton">
+                    <div class="flex flex-col px-6 py-6 border-violet-700 border-l-[5px] rounded-[5px] ">
+                        <div class=" flex justify-between capitalize">
+                            <a href="#" class="font-semibold text-blue-700 pt-3">full stack
+                                web
+                                developer</a>
+                            <div class="py-1.5 px-3 bg-white hover:bg-gray-200 rounded hover:rounded-full">
+                                <svg width="20px" height="30px" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" stroke="#676869"
+                                    stroke-width="0.21600000000000003">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0" />
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+                                    <g id="SVGRepo_iconCarrier">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M4 4C4 2.34315 5.34315 1 7 1H17C18.6569 1 20 2.34315 20 4V20.9425C20 22.6114 18.0766 23.5462 16.7644 22.5152L12 18.7717L7.23564 22.5152C5.92338 23.5462 4 22.6114 4 20.9425V4ZM7 3C6.44772 3 6 3.44772 6 4V20.9425L12 16.2283L18 20.9425V4C18 3.44772 17.5523 3 17 3H7Z"
+                                            fill="#696969" />
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                        <a href="#" class="text-[14px] capitalize">PT group four HS.com</a>
+                        <a href="#" class="text-[14px] font-semibold pt-5 capitalize">jakarta selatan</a>
+                        <a href=""></a>
+                        <ul class="list-disc pl-5 text-[14px] pt-3 capitalize">
+                            <li>membangun website</li>
+                            <li>mengembangakan feature</li>
+                            <li>maintenance app</li>
+                        </ul>
+                        <!-- dropdown -->
+                        <div class=" mt-4 py-2 flex justify-between" onclick="toggleDropdown()">
+                            <a href="#">12 hari yang lalu</a>
+                            <div class="py-1 px-3">
+                                <svg fill="#000000" width="15px" height="15px" viewBox="0 0 32 32" version="1.1"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.256 8.606c0-0.269 0.106-0.544 0.313-0.75 0.412-0.412 1.087-0.412 1.5 0l14.119 14.119 13.913-13.912c0.413-0.412 1.087-0.412 1.5 0s0.413 1.088 0 1.5l-14.663 14.669c-0.413 0.413-1.088 0.413-1.5 0l-14.869-14.869c-0.213-0.213-0.313-0.481-0.313-0.756z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <hr class=" h-px bg-gray-300 border-0 dark:bg-gray-700 ">
+                    </div>
+                    <div id="dropdown"
+                        class="capitalize w-[435px] border-violet-700 border-l-[5px] rounded-tl-none bg-white cursor-pointer py-6 px-6 absolute hidden transition duration-700 rounded-b-[5px] ">
+                        <div class="cursor-pointer font-semibold">spesialis pekerjaan</div>
+                        <div class="pt-2 font font-semibold text-blue-700">
+                            <a href="#">front-end dev/</a>
+                            <a href="#">back-end dev/</a>
+                            <a href="#">full-stack dev</a>
+                        </div>
+                        <hr class="my-5 h-px bg-gray-300 border-0 dark:bg-gray-700">
+                        <div class="cursor-pointer font-semibold">jenis pekerjaan</div>
+                        <div class="pt-2 font-semibold text-blue-700"><a href="#">penuh waktu</a></div>
+                    </div>
+                </div>
+                <!-- Akhir card -->
+        </div>
+    </section>
+
+</body>
+
+</html>
+
+<script src="main.js"></script>
